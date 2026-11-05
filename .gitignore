@@ -1,0 +1,90 @@
+# ==========================================
+# Domain Intelligence - .gitignore
+# ==========================================
+
+# Variables d'environnement et secrets
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+secrets/
+credentials/
+
+# Environnements virtuels Python
+.venv/
+venv/
+env/
+ENV/
+
+# Cache Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution et packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+wheels/
+
+# Outils de développement
+.idea/
+.vscode/
+.spyderproject/
+.spyproject/
+.ropeproject/
+
+# Tests et couverture
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# Logs
+*.log
+logs/
+
+# Historique des analyses
+history/
+snapshots/
+events/
+
+# Rapports générés
+rapports/
+reports/
+output/
+outputs/
+
+# Exports générés
+*.pdf
+*.html
+*.json
+*.csv
+
+# Exceptions : conserver les fichiers de configuration et documentation
+!package.json
+!requirements.json
+!*.example.json
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Fichiers temporaires
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+
+# Bases de données locales
+*.db
+*.sqlite
+*.sqlite3
